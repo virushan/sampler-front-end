@@ -1,0 +1,63 @@
+#profile .profile-header{
+  padding: 60px 10px;
+  background: #F5F5F5;
+  height: 70px;
+}
+
+#profile .profile-header .profile-header-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#profile .profile-header h1{
+  font-size: 40px;
+  color: #404040;
+  margin: 0 !important;
+}
+
+#profile .profile-info{
+  margin: 20px 10px;
+}
+
+#profile .profile-info .profile-info-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#profile .profile-info .profile-info-wrapper .first-name,
+#profile .profile-info .profile-info-wrapper .last-name,
+#profile .profile-info .profile-info-wrapper .email,
+#profile .profile-info .profile-info-wrapper .password {
+  width: 40%;
+  color: #404040;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#profile .profile-info .profile-info-wrapper .email,
+#profile .profile-info .profile-info-wrapper .password {
+  width: 60%;
+}
+
+#profile .profile-info .profile-info-wrapper .first-name h4,
+#profile .profile-info .profile-info-wrapper .last-name h4,
+#profile .profile-info .profile-info-wrapper .email h4,
+#profile .profile-info .profile-info-wrapper .password h4{
+  font-weight: normal;
+  color: #808080;
+}
+@media all and (max-width:800px){
+  #profile .profile-header .profile-header-wrapper, #profile .profile-info .profile-info-wrapper{
+    width: 100%;
+  }
+}
+
+@media all and (max-width:680px){
+  #profile .profile-info .profile-info-wrapper .first-name,
+  #profile .profile-info .profile-info-wrapper .last-name,
+  #profile .profile-info .profile-info-wrapper .email,
+  #profile .profile-info .profile-info-wrapper .password {
+    width: 100%;
+  }
+}

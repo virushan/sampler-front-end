@@ -1,0 +1,71 @@
+#home .account-balance{
+     padding: 60px 10px;
+     background: #F5F5F5;
+     height: 90px;
+}
+
+#home .account-balance .account-balance-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#home .account-balance h4{
+  font-size: 17px;
+  color: #A9A9A9;
+  margin: 0 !important;
+}
+
+#home .account-balance span{
+  font-size: 50px;
+  color: #4DC0B9;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#home .user-accounts-balance{
+  margin: 20px 10px;
+}
+
+#home .user-accounts-balance .user-accounts-balance-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#home .user-accounts-balance .user-accounts-balance-wrapper h4{
+  font-size: 22px;
+  color: #404040;
+}
+
+#home .user-accounts-balance .user-accounts-balance-wrapper .name-heading,
+#home .user-accounts-balance .user-accounts-balance-wrapper .balance-heading,
+#home .user-accounts-balance .user-accounts-balance-wrapper .user-accounts .name,
+#home .user-accounts-balance .user-accounts-balance-wrapper .user-accounts .balance {
+  width: calc(70% - 33px);
+  font-weight: bold;
+  border: #BFBFBF 1px solid;
+  height: 48px;
+  padding-left: 15px;
+  line-height: 48px;
+  color: #404040;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#home .user-accounts-balance .user-accounts-balance-wrapper .balance-heading, #home .user-accounts-balance .user-accounts-balance-wrapper .user-accounts .balance{
+  width: 30%;
+  border-left: none;
+  text-align: center;
+}
+
+#home .user-accounts-balance .user-accounts-balance-wrapper .user-accounts .name, #home .user-accounts-balance .user-accounts-balance-wrapper .user-accounts .balance{
+  border-top: none;
+  font-weight: normal;
+}
+
+
+
+@media all and (max-width:800px){
+  #home .account-balance .account-balance-wrapper, #home .user-accounts-balance .user-accounts-balance-wrapper{
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+<div id="profile">
+  <div class="nav-menu">
+    <ul ng-class="{'topnav': true, 'responsive':  responsive}">
+      <li id="logo"><a href="#home">
+        <img src="images/Assets/logo_sampler_white.svg" alt="Sampler Logo"/>
+      </a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:30px;"ng-init="responsive=false" ng-click="responsive = !responsive">☰</a>
+      </li>
+      <div class="pull-right">
+        <li><a href="/home">Home</a></li>
+        <li><a class="active" href="/profile">Profile</a></li>
+        <li><a href="/sign_out">Logout</a></li>
+      </div>
+    </ul>
+  </div>
+  <div class="profile-header">
+    <div class="profile-header-wrapper">
+      <h1>My Profile</h1>
+    </div>
+  </div>
+
+  <!--Profile Info-->
+  <div class="profile-info">
+    <div class="profile-info-wrapper">
+      <div class="first-name pull-left">
+        <h4>First Name</h4>
+        <h3>{{ myProfile.firstName }}</h3>
+      </div>
+
+      <div class="email pull-left">
+        <h4>E-mail</h4>
+        <h3>{{ myProfile.email }}</h3>
+      </div>
+
+      <div class="last-name pull-left">
+        <h4>Last Name</h4>
+        <h3>{{ myProfile.lastName }}</h3>
+      </div>
+
+      <div class="password pull-left">
+        <h4>Password</h4>
+        <h3>&#8226; &#8226; &#8226; &#8226; &#8226; &#8226; &#8226; &#8226; &#8226; &#8226; </h3>
+      </div>
+    </div>
+  </div>
+
+</div>
+

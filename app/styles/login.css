@@ -1,0 +1,112 @@
+/* this will cover min 320px display */
+#register img, #login img, #send-funds .funds-panel img{
+  margin: 48px auto 48px auto;
+  display: block;
+}
+/* this will cover min 320px display */
+#register .login-panel, #login .login-panel, #send-funds .funds-panel {
+  margin: 0 auto 0 auto;
+  min-width: 320px;
+  max-width: 395px;
+  border: 1px solid #BFBFBF;
+  border-radius: 5px;
+  color: #434343;
+}
+
+#register .login-panel i.danger,
+#login .login-panel i.danger,
+#register .login-panel i.success,
+#login .login-panel i.success,
+#send-funds .funds-panel i.danger,
+#send-funds .funds-panel i.success{
+  display: block;
+  min-width: 75.4%;
+  max-width: 75.4%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-size: 15px;
+  background: #F2DEDE;
+}
+
+#register .login-panel i.success, #login .login-panel i.success, #send-funds .funds-panel i.success{
+  background: #DFF0D8;
+}
+
+#register .login-panel h3, #login .login-panel h3, #send-funds .funds-panel h3{
+  margin-top: 43px;
+  text-align: center;
+}
+
+#register .login-panel label,
+#register .login-panel input,
+#register .login-panel button,
+#login .login-panel label,
+#login .login-panel input,
+#login .login-panel button,
+#send-funds .funds-panel input,
+#send-funds .funds-panel label,
+#send-funds .funds-panel button{
+  min-width: 75.4%;
+  max-width: 75.4%;
+  text-align: left;
+  display: block;
+  margin: 30px auto 0 auto;
+  height: 48px;
+  font-size: 17px;
+}
+
+#register .login-panel label, #login .login-panel label, #send-funds .funds-panel label{
+  height: auto;
+  font-weight: bold;
+}
+
+#register .login-panel input, #login .login-panel input, #send-funds .funds-panel input{
+  min-width: 70.4%;
+  max-width: 70.4%;
+  margin: 5px auto 0 auto;
+  border:#404040 1px solid;
+  border-radius: 2px;
+  padding: 0 10px;
+
+}
+
+#send-funds .funds-panel .btn-group{
+  min-width: 75.4%;
+  max-width: 75.4%;
+  margin: 0 auto 10px auto;
+}
+
+#send-funds .funds-panel .btn-group button{
+  min-width: 100px;
+  max-width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  color: grey;
+  background: none;
+}
+
+#send-funds .funds-panel .btn-group button:last-child{
+  background: #3A99D8;
+  color: #FFF;
+  border: none;
+}
+
+#register .login-panel button, #login .login-panel button{
+  margin: 24px auto 0 auto;
+  border-radius: 2px;
+  color: #FFF;
+  background: #3A99D8;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+}
+
+#register .login-panel a, #login .login-panel a{
+  margin: 44px auto 10px auto;
+  color: #3A99D8;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}

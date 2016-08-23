@@ -1,0 +1,24 @@
+<div id="register">
+  <img src="images/Assets/logo_sampler.svg" class="Sampler Logo"/>
+  <div class="login-panel">
+    <h3>Create your account</h3>
+    <label>First name</label>
+    <input type="text" ng-model="registerObj.first_name"/>
+    <label>Last name</label>
+    <input type="text" ng-model="registerObj.last_name"/>
+    <label>E-mail</label>
+    <input type="text" ng-model="registerObj.email"/>
+    <label>Password</label>
+    <input type="password" ng-model="registerObj.password"/>
+    <label>Confirm password</label>
+    <input type="password" ng-model="registerObj.password_confirmation"/>
+    <button ng-click="registerUser()">Register</button>
+    <i class="danger" ng-repeat="alertInfo in userAlert">{{ alertInfo }}.</i>
+    <i class="success">{{ userMsgSuccess }}</i>
+    <a href="/">Already have an account? Login</a>
+  </div>
+</div>
+
+
+
+

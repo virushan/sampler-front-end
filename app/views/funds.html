@@ -1,0 +1,19 @@
+<div id="send-funds">
+  <div class="funds-panel">
+    <img src="/images/Assets/icon_dollar.svg" alt="Dollar Icon"/>
+    <h3>Send money to {{ senderAccount.user.firstName }}</h3>
+    <label>Amount</label>
+    <input type="text" ng-model="account.fundsToSend"/>
+    <div class="btn-group">
+      <button ng-click="cancelFund()" class="pull-left">Cancel</button>
+      <button ng-click="sendFunds()" class="pull-right">Send</button>
+    </div>
+    <div class="clear"></div>
+    <i class="danger">{{ userAlert }}</i>
+    <i class="success">{{ userMsgSuccess }}</i>
+  </div>
+</div>
+
+
+
+

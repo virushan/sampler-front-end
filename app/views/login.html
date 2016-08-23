@@ -1,0 +1,17 @@
+<div id="login">
+    <img src="/images/Assets/logo_sampler.svg" class="Sampler Logo"/>
+  <div class="login-panel">
+      <h3>Login</h3>
+      <label>E-mail</label>
+      <input type="text" ng-model="AuthObj.username"/>
+      <label>Password</label>
+      <input type="password" ng-model="AuthObj.password"/>
+      <button ng-click="signIn()">Login</button>
+      <i class="danger" ng-repeat="alertInfo in userAlert">{{ alertInfo }}.</i>
+      <a href="/register">Don't have an account? Register</a>
+  </div>
+</div>
+
+
+
+

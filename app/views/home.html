@@ -1,0 +1,38 @@
+<div id="home">
+  <div class="nav-menu">
+  <ul ng-class="{'topnav': true, 'responsive':  responsive}">
+    <li id="logo"><a href="#home">
+      <img src="/images/Assets/logo_sampler_white.svg" alt="Sampler Logo"/>
+    </a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:30px;"ng-init="responsive=false" ng-click="responsive = !responsive">☰</a>
+    </li>
+    <div class="pull-right">
+      <li><a class="active"  href="/home">Home</a></li>
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/sign_out">Logout</a></li>
+    </div>
+  </ul>
+  </div>
+  <!--Account balance for current user-->
+  <div class="account-balance">
+    <div class="account-balance-wrapper">
+      <h4>My Balance</h4>
+      <span>${{ accounts.my.balance }}</span>
+    </div>
+  </div>
+  <!--Users and account balance-->
+  <div class="user-accounts-balance">
+    <div class="user-accounts-balance-wrapper">
+      <h4>Users</h4>
+      <div class="name-heading pull-left">Name</div>
+      <div class="balance-heading pull-right">Balance</div>
+
+      <div class="user-accounts" ng-repeat="account in accounts.all">
+        <div class="name pull-left">{{ account.firstName+' '+account.lastName }}</div>
+        <div class="balance pull-right">${{account.account.balance}}</div>
+      </div>
+
+    </div>
+  </div>
+</div>
